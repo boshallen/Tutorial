@@ -345,7 +345,8 @@ lmdeploy lite auto_awq \
 
 ![img](https://raw.githubusercontent.com/BigWhiteFox/pictures/main/23.png)
 
-如果此处出现报错：TypeError: 'NoneType' object is not callable，原因是 当前版本 datasets3.0 无法下载calibrate数据集
+如果此处出现报错：TypeError: 'NoneType' object is not callable，原因是 当前版本的
+datasets3.0 无法下载calibrate数据集
 在命令前加一行 pip install datasets==2.19.2 可以解决
 
 等待推理完成，便可以直接在你设置的目标文件夹看到对应的模型文件。
