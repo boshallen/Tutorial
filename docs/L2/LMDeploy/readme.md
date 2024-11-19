@@ -345,6 +345,9 @@ lmdeploy lite auto_awq \
 
 ![img](https://raw.githubusercontent.com/BigWhiteFox/pictures/main/23.png)
 
+如果此处出现报错：TypeError: 'NoneType' object is not callable，原因是 当前版本 datasets3.0 无法下载calibrate数据集
+在命令前加一行 pip install datasets==2.19.2 可以解决
+
 等待推理完成，便可以直接在你设置的目标文件夹看到对应的模型文件。
 
 那么推理后的模型和原本的模型区别在哪里呢？最明显的两点是模型文件大小以及占据显存大小。
